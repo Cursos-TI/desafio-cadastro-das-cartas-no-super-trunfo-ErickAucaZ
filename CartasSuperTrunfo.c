@@ -19,21 +19,26 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     /*Atributos da cidade*/
-
-    int codigodacidade;
+    char estado[20];
+    char pais[20];
     char nome[30];
+    int codigodacidade;
     int populacao;
+    int pontosturisticos;
     float area;
     double pib;
-    int pontosturisticos;
 
-    /*Utilização das funções printf e scanf para o úsuario definir cada atributo da cidade*/
-
-    printf("Código da cidade: \n");
-    scanf("%d", &codigodacidade);
+    /*Utilização das funções printf e scanf para o usuário definir cada atributo da cidade*/
+    printf("escolha um país: \n");
+    fgets( pais, 20, stdin);
+    printf("Escolha o estado A: \n");
+    fgets( estado, 20, stdin);
 
     printf("Nome da cidade: \n");
     scanf("%s", &nome);
+    
+    printf("Código da cidade: \n");
+    scanf("%d", &codigodacidade);
 
     printf("População da cidade: \n");
     scanf("%d", &populacao);
@@ -47,12 +52,12 @@ int main() {
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosturisticos);
 
-    /*apresentação de cada atributo que o úsuario deu a cidade*/
-
-    printf("Código da cidade: %d\n", codigodacidade);
+    /*apresentação de cada atributo que o usuário deu a cidade*/
+    printf("-----Cidade 1-----\n");
     printf("Nome da cidade: %s\n", nome);
+    printf("Código da cidade: %d\n", codigodacidade);
     printf("População da cidade: %d\n", populacao);
-    printf("Área da cidade: %f\n", area);
+    printf("Área da cidade: %f Km²\n", area);
     printf("PIB da cidade: %lf\n", pib);
     printf("Números de pontos turísticos da cidade: %d\n", pontosturisticos);
 
