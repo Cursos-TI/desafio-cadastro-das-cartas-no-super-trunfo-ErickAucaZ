@@ -24,12 +24,12 @@ int main() {
     char nome[30];
     int populacao;
     float area;
-    float pib;
+    double pib;
     int pontosturisticos;
 
-    /*Utilização da funções printf e scanf para o úsuario definir cada atributo da cidade*/
+    /*Utilização das funções printf e scanf para o úsuario definir cada atributo da cidade*/
 
-    printf("Código da cidade: /n");
+    printf("Código da cidade: \n");
     scanf("%d", &codigodacidade);
 
     printf("Nome da cidade: \n");
@@ -42,18 +42,18 @@ int main() {
     scanf("%f", &area);
 
     printf("PIB da cidade: \n");
-    scanf("%f", &pib);
+    scanf("%lf", &pib);
 
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pontosturisticos);
 
-    /*Resumo de todos atributos que o úsuario deu a cidade*/
+    /*apresentação de cada atributo que o úsuario deu a cidade*/
 
     printf("Código da cidade: %d\n", codigodacidade);
     printf("Nome da cidade: %s\n", nome);
     printf("População da cidade: %d\n", populacao);
     printf("Área da cidade: %f\n", area);
-    printf("PIB da cidade: %f\n", pib);
+    printf("PIB da cidade: %lf\n", pib);
     printf("Números de pontos turísticos da cidade: %d\n", pontosturisticos);
 
     return 0;
