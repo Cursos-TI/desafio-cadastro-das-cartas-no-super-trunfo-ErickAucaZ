@@ -29,13 +29,13 @@ int main() {
     double pib;
 
     /*Utilização das funções printf e scanf para o usuário definir cada atributo da cidade*/
-    printf("escolha um país: \n");
+    printf("Escolha um país: \n");
     fgets( pais, 20, stdin);
     printf("Escolha o estado A: \n");
     fgets( estado, 20, stdin);
 
-    printf("Nome da cidade: \n");
-    scanf("%s", &nome);
+    printf("Nome da cidade 1: \n");
+    fgets( nome, 30, stdin);
     
     printf("Código da cidade: \n");
     scanf("%d", &codigodacidade);
