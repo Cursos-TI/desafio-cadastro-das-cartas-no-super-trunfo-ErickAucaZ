@@ -51,11 +51,11 @@ int main() {
         scanf("%d", &populacao);
 
         //Pede a área da cidade em Km²
-        printf("Área da cidade: ");
+        printf("Área da cidade em Km²: ");
         scanf("%f", &area);
 
         //Pede o PIB da cidade
-        printf("PIB da cidade: ");
+        printf("PIB da cidade em milhões de reais: ");
         scanf("%f", &pib);
 
         //Pede o número de pontos turisticos da cidade
@@ -75,7 +75,7 @@ int main() {
 
         }
 
-        printf("\nEstado %c cadastrado!\n\n", estado); //Avisa para o usuário que o estado está cadastrado
+        printf("\nEstado %c cadastrado!\n", estado); //Avisa para o usuário que o estado está cadastrado
     }
 
     return 0;
