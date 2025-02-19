@@ -108,7 +108,7 @@ int main() {
             printf("-Estado: %c\n", estado2);
             printf("-Código da cidade: %s\n", codigo2);
             printf("-Nome da Cidade: %s\n", nome_cidade2);
-            printf("-População da cidade: %d\n", populacao2);
+            printf("-População da cidade: %lu\n", populacao2);
             printf("-Área da cidade em km²: %.2f KM²\n", area2);
             printf("-PIB da cidade em bilhões de reais: %.2f bilhões de reais\n", pib2);
             printf("-Número de pontos turísticos: %d\n", num_ponto_turistico2);
