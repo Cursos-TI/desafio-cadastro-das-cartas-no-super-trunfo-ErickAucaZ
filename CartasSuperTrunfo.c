@@ -29,7 +29,7 @@ int main() {
         float ppc1, ppc2; //ppc = PIB per Capita
         float superpoder1, superpoder2;
         //Cadastro da primeira carta
-        printf("---- CARTA 1 ----\n\n");
+        printf("---- CADASTRO CARTA 1 ----\n\n");
                 
             printf("Digite o estado (Uma letra de 'A' a 'H'): \n"); //Pede ao usuário a letra que representa o estado exemplo: A, B, C... H
             scanf(" %c", &estado1);
@@ -72,7 +72,7 @@ int main() {
             printf("-PIB per capita: %.2f reais\n", ppc1);
             printf("-Super Poder da carta 1: %.2f\n", superpoder1);
     
-        printf("\n---- CARTA 2 ----\n\n"); //Cadastro da segunda carta
+        printf("\n---- CADASTRO CARTA 2 ----\n\n"); //Cadastro da segunda carta
     
             //As mesmas etapas da primeira carta, porém usando as váriaveis da segunda carta exemplo: estado2, codigo2...
     
