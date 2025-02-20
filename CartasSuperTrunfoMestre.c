@@ -53,11 +53,12 @@ int main() {
             scanf("%d", &num_ponto_turistico1);
     
             densidade1 = populacao1 / area1; //calcula a densidade populacional, de acordo com os dados cadastrados pelo usuário, da população e da área
+            float densidade_invertida1 = 1 / densidade1;
 
             ppc1 = (pib1 * 1e9) / populacao1; //calcula o PIB per capita utilizando os dados da população e do PIB cadastrados pelo usuário
             //usamos 1e9 (que é 10^9) porque o pib é pedido em bilhões, sendo assim o jeito certo de se calcular o pib per capita
                 
-            superpoder1 = (float) populacao1 + area1 + pib1 + num_ponto_turistico1 + ppc1 - densidade1; //Super Poder da carta, Cálculo de todos atributos que o usuário escolheu menos o estado, código e nome
+            superpoder1 = (float) populacao1 + area1 + pib1 + num_ponto_turistico1 + ppc1 + densidade_invertida1; //Super Poder da carta, Cálculo de todos atributos que o usuário escolheu menos o estado, código e nome
     
             //Imprime o cadastro completo da cidade e seus atributos que o usuário escolheu
             printf("\n--Carta 1--\n\n");
@@ -98,10 +99,11 @@ int main() {
             scanf("%d", &num_ponto_turistico2);
     
             densidade2 = populacao2 / area2;
-    
+            float densidade_invertida2 = 1 / densidade2;
+
             ppc2 =  (pib2 * 1e9) / populacao2;
 
-            superpoder2 = (float) populacao2 + area2 + pib2 + num_ponto_turistico2 + ppc2 - densidade2;             
+            superpoder2 = (float) populacao2 + area2 + pib2 + num_ponto_turistico2 + ppc2 + densidade_invertida2;             
                 
             //Imprime ao usuário os dados da segunda carta cadastrada
             printf("\n--Carta 2--\n\n");
@@ -124,7 +126,7 @@ int main() {
             printf("-Número de pontos turísticos: %d\n", num_ponto_turistico1 > num_ponto_turistico2);
             printf("-Densidade populacional: %d\n", densidade1 < densidade2);
             printf("-PIB per Capita: %d\n", ppc1 > ppc2);
-            printf("-Super Poder da carta: %d\n", superpoder1 > superpoder2);
+            printf("-Super Poder da carta: %.2f\n", superpoder1 > superpoder2);
     
          return 0;
 }
