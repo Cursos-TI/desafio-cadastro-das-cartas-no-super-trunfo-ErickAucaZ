@@ -3,7 +3,7 @@
 int main() {
 
         char estado1, estado2;
-        char codigo1[3], codigo2[3];
+        char codigo1[4], codigo2[4];
         char nome_cidade1[30], nome_cidade2[30];
         unsigned long int populacao1, populacao2;
         float area1, area2;
@@ -97,11 +97,12 @@ int main() {
             printf("-PIB per capita: %.2f reais\n", ppc2);
             printf("-Super Poder da carta 2: %.2f\n", superpoder2);
 
-            printf("\n-- Comparação das Cartas pelo PIB --\n\n");
+            printf("\n-- Comparação das Cartas pelo PIB --\n\n"); //Uma comparação única das cartas usando if, else
 
-            printf("PIB da Carta 1 %s - %.2f\n", nome_cidade1, pib1);
-            printf("PIB da Carta 2 %s - %.2f\n", nome_cidade2, pib2);
+            printf("PIB da Carta 1 %s - %.2f\n", nome_cidade1, pib1); //informa a cidade e o pib da carta 1
+            printf("PIB da Carta 2 %s - %.2f\n", nome_cidade2, pib2); //informa a cidade e o pib da carta 2
 
+            //usamos if, else para determinar qual carta vencerá
             if (pib1 > pib2) {
                 printf("Resultado: Carta 1 - %s - venceu!\n", nome_cidade1);
             } else {
