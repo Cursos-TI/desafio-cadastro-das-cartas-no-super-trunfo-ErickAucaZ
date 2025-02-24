@@ -126,8 +126,7 @@ int main() {
             printf("-Número de pontos turísticos: %d\n", num_ponto_turistico1 > num_ponto_turistico2);
             printf("-Densidade populacional: %d\n", densidade1 < densidade2);
             printf("-PIB per Capita: %d\n", ppc1 > ppc2);
-            printf("-Super Poder da carta: %.2f\n", superpoder1 > superpoder2);
+            printf("-Super Poder da carta: %d\n", superpoder1 > superpoder2);
     
          return 0;
-}
-       
+} 
