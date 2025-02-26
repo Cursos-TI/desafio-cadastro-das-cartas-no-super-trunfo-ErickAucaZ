@@ -125,6 +125,10 @@ int main() {
                     printf("-Nome do país: %s\n", pais1);
                     printf("-Carta 1: %lu - Carta 2: %lu\n", populacao1, populacao2);
                     printf("-Carta 1 venceu pelo atributo População!\n");
+                } else if (populacao1 == populacao2) {
+                    printf("-Nome do país: %s\n", pais1);
+                    printf("-Carta 1: %lu - Carta 2: %lu\n", populacao1, populacao2);
+                    printf("-Empate!\n");
                 } else {
                    printf("-Nome do país: %s\n", pais2); 
                    printf("-Carta 1: %lu - Carta 2: %lu\n", populacao1, populacao2);
@@ -137,6 +141,10 @@ int main() {
                     printf("-Nome do país: %s\n", pais1);
                     printf("-Carta 1: %.2f - Carta 2: %.2f\n", area1, area2);
                     printf("-Carta 1 venceu pelo atributo Área!\n");
+                } else if (area1 == area2) {
+                    printf("-Nome do país: %s\n", pais1);
+                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", area1, area2);
+                    printf("-Empate!\n");
                 } else {
                    printf("-Nome do país: %s\n", pais2);
                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", area1, area2);
@@ -149,6 +157,10 @@ int main() {
                     printf("-Nome do país: %s\n", pais1);
                     printf("-Carta 1: %.2f - Carta 2: %.2f\n", pib1, pib2);
                     printf("-Carta 1 venceu pelo atributo PIB!\n");
+                } else if (pib1 == pib2) {
+                    printf("-Nome do país: %s\n", pais1);
+                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", pib1, pib2);
+                    printf("-Empate!\n");
                 } else {
                    printf("-Nome do país: %s\n", pais2); 
                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", pib1, pib2);
@@ -161,19 +173,27 @@ int main() {
                     printf("-Nome do país: %s\n", pais1);
                     printf("-Carta 1: %d - Carta 2: %d\n", populacao1, populacao2);
                     printf("-Carta 1 venceu pelo atributo Número de pontos turísticos!\n");
+                } else if (num_ponto_turistico1 == num_ponto_turistico2) {
+                    printf("-Nome do país: %s\n", pais1);
+                    printf("-Carta 1: %d - Carta 2: %d\n", populacao1, populacao2);
+                    printf("Empate!\n");
                 } else {
                    printf("-Nome do país: %s\n", pais2); 
                    printf("-Carta 1: %d - Carta 2: %d\n", num_ponto_turistico1, num_ponto_turistico2);
                    printf("-Carta 2 venceu pelo atributo Número de pontos turísticos!\n");
                 }
             break;
-            case 5: //Caso 5 compara a Densidade populacional, sendo que a menor vence
+            case 5: //Caso 5 compara a Densidade populacional, sendo que o menor valor vence
                 printf("\n-Densidade Populacional escolhida!\n");
                 printf("-Regra: A carta com menor valor vence nesse atributo!!\n\n");
                 if (densidade1 < densidade2){
                     printf("-Nome do país: %s\n", pais1);
                     printf("-Carta 1: %.2f - Carta 2: %.2f\n", densidade1, densidade2);
                     printf("-Carta 1 venceu pelo atributo Densidade Populacional!\n");
+                } else if (densidade1 == densidade2) {
+                    printf("-Nome do país: %s\n", pais1);
+                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", densidade1, densidade2);
+                    printf("-Empate!\n");
                 } else {
                    printf("-Nome do país: %s\n", pais2);
                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", densidade1, densidade2);
@@ -184,24 +204,32 @@ int main() {
                 printf("\n-PIB per Capita escolhido!\n");
                 if (ppc1 > ppc2){
                     printf("-Nome do país: %s\n", pais1);
-                    printf("Carta 1: %.2f - Carta 2: %.2f\n", ppc1, ppc2);
-                    printf("Carta 1 venceu pelo atributo PIB per Capita!\n");
+                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", ppc1, ppc2);
+                    printf("-Carta 1 venceu pelo atributo PIB per Capita!\n");
+                } else if (ppc1 == ppc2) {
+                    printf("-Nome do país: %s\n", pais1);
+                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", ppc1, ppc2);
+                    printf("-Empate!\n");
                 } else {
                    printf("-Nome do país: %s\n", pais2);
-                   printf("Carta 1: %.2f - Carta 2: %.2f\n", ppc1, ppc2);
-                   printf("Carta 2 venceu pelo atributo PIB per Capita!\n");
+                   printf("-Carta 1: %.2f - Carta 2: %.2f\n", ppc1, ppc2);
+                   printf("-Carta 2 venceu pelo atributo PIB per Capita!\n");
                 }
             break;
             case 7: //Caso 7 compara o super poder da carta
                 printf("\n-Super Poder da carta escolhido!\n");
                 if (superpoder1 > superpoder2){
                     printf("-Nome do país: %s\n", pais1);
-                    printf("Carta 1: %.2f - Carta 2: %.2f\n", superpoder1, superpoder2);
-                    printf("Carta 1 venceu pelo atributo Super Poder da carta!\n");
+                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", superpoder1, superpoder2);
+                    printf("-Carta 1 venceu pelo atributo Super Poder da carta!\n");
+                } else if (superpoder1 == superpoder2) {
+                    printf("-Nome do país: %s\n", pais1);
+                    printf("-Carta 1: %.2f - Carta 2: %.2f\n", superpoder1, superpoder2);
+                    printf("-Empate!\n");
                 } else {
                    printf("-Nome do país: %s\n", pais2);
-                   printf("Carta 1: %.2f - Carta 2: %.2f\n", superpoder1, superpoder2);
-                   printf("Carta 2 venceu pelo atributo população!\n");
+                   printf("-Carta 1: %.2f - Carta 2: %.2f\n", superpoder1, superpoder2);
+                   printf("-Carta 2 venceu pelo atributo população!\n");
                 }
             break;
             default: //default é para caso o usuário escolha uma opção que não é válida exemplo um número errado ou um caractere
