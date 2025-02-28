@@ -171,7 +171,7 @@ int main() {
                 printf("\n-Número de pontos turísticos escolhido!\n");
                 if (num_ponto_turistico1 > num_ponto_turistico2){
                     printf("-Nome do país: %s\n", pais1);
-                    printf("-Carta 1: %d - Carta 2: %d\n", populacao1, populacao2);
+                    printf("-Carta 1: %d - Carta 2: %d\n", num_ponto_turistico1, num_ponto_turistico2);
                     printf("-Carta 1 venceu pelo atributo Número de pontos turísticos!\n");
                 } else if (num_ponto_turistico1 == num_ponto_turistico2) {
                     printf("-Nome do país: %s\n", pais1);
