@@ -247,7 +247,7 @@ int main() {
                     printf("-Carta 1 venceu pelo atributo PIB!\n"); }
                 else {
                     printf("-País da Carta 1: %s - País da Carta 2: %s\n", pais1, pais2);
-                    printf("-PIB da Carta 1: %.2f - PIB da Carta 2: %.2f", pib1, pib2);
+                    printf("-PIB da Carta 1: %.2f - PIB da Carta 2: %.2f\n", pib1, pib2);
                     printf("-Carta 2 venceu pelo atributo PIB!\n"); }
             break;
             case 4:
